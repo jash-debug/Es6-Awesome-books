@@ -17,11 +17,6 @@ window.addEventListener('load', () => {
         booksSection.append(newBook);
       });
     }
-
-    sectionTitle.innerHTML = 'Add new';
-    booksSection.classList.add('hidden');
-    form.classList.remove('hidden');
-    contact.classList.add('hidden');
   }
 });
 
@@ -44,6 +39,13 @@ const menu = document.querySelector('.nav-menu');
 const menuItems = document.querySelectorAll('.nav-item');
 const contact = document.getElementById('contact-info');
 const sectionTitle = document.querySelector('.title');
+
+window.addEventListener('load', () => {
+  sectionTitle.innerHTML = 'Add new';
+  booksSection.classList.add('hidden');
+  form.classList.remove('hidden');
+  contact.classList.add('hidden');
+});
 
 burgerMenu.addEventListener('click', () => {
   if (burgerMenu.getAttribute('data-toggled') === 'false') {
