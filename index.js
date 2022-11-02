@@ -17,6 +17,11 @@ window.addEventListener('load', () => {
         booksSection.append(newBook);
       });
     }
+
+    sectionTitle.innerHTML = 'Add new';
+    booksSection.classList.add('hidden');
+    form.classList.remove('hidden');
+    contact.classList.add('hidden');
   }
 });
 
